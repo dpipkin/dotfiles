@@ -20,6 +20,13 @@ set splitright
 " Highlight current line
 set cursorline
 
+" Don't make me save things
+" if I just want to change buffers
+set hidden
+
+" Show what I'm typing out
+set showcmd
+
 command! MakeTags !ctags -R .
 
 " Netrw settings
@@ -38,7 +45,6 @@ set shiftwidth=2
 set expandtab
 
 " Line Numbers
-set rnu
 set nu
 
 " No auto-comment
@@ -50,7 +56,9 @@ set backspace=2
 " Plugin time!
 call plug#begin('~/.vim/plugged')
 
-Plug 'tpope/vim-rails'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-surround'
 
 call plug#end()

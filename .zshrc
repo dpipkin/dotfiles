@@ -54,3 +54,12 @@ export PATH="/Users/danielpipkin/miniconda3/bin:$PATH"
 
 # use typora from the shell
 alias typora="open -a typora"
+
+# add vsql to path
+export PATH="/opt/vertica/bin:$PATH"
+
+# set default vsql options
+alias vsql='vsql -h vertica.prod.internal.mx -U daniel.pipkin -W -P format=unaligned -A -F , -P footer=false'
+
+# add config versioning
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
