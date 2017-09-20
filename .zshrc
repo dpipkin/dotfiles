@@ -63,3 +63,6 @@ alias vsql='vsql -h vertica.prod.internal.mx -U daniel.pipkin -W -P format=unali
 
 # add config versioning
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# alias these stupid impossible to remember jruby flags
+alias bigheap="JRUBY_OPTS='-J-Xmx2g'"
