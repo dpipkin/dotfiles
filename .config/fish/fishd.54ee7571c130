@@ -32,3 +32,4 @@ SET fish_pager_color_description:555\x1eyellow
 SET fish_pager_color_prefix:cyan
 SET fish_pager_color_progress:cyan
 SET fish_user_abbreviations:home\x3dcd\x20/mnt/c/Users/Daniel
+SET fish_user_paths:/home/daniel/miniconda3/bin
