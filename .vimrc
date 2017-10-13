@@ -38,7 +38,6 @@ set shiftwidth=2
 set expandtab
 
 " Line Numbers
-set rnu
 set nu
 
 " No auto-comment
