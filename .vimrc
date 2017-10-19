@@ -20,6 +20,13 @@ set splitright
 " Highlight current line
 set cursorline
 
+" Don't make me save things
+" if I just want to change buffers
+set hidden
+
+" Show what I'm typing out
+set showcmd
+
 command! MakeTags !ctags -R .
 
 " Netrw settings
