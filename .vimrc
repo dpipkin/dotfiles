@@ -48,7 +48,10 @@ set expandtab
 set nu
 
 " No auto-comment
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+augroup autocomments
+  autocmd!
+  autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+augroup END
 
 " Fix backspace
 set backspace=2
@@ -61,6 +64,5 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-surround'
-Plug 'dag/vim-fish'
 
 call plug#end()
