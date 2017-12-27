@@ -10,8 +10,8 @@ filetype plugin on
 
 " Set fuzzy-ish finding for files
 set path+=**
+
 set wildmenu
-set wildignore+=**/node_modules " Get that out of my wildmenu!
 
 " Split new splits to the right default
 " I can't get it to work right now
@@ -56,7 +56,10 @@ set backspace=2
 " Plugin time!
 call plug#begin('~/.vim/plugged')
 
-Plug 'tpope/vim-rails'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-surround'
 
 call plug#end()
